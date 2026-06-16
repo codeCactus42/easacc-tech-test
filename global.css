@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+@import 'uniwind';
+@import 'heroui-native/styles';
+@import 'heroui-native/styles/vibrant';
+
+@source './node_modules/heroui-native/lib';
+
+@layer theme {
+  :root {
+    @variant light {
+      --font-normal: 'Inter-Regular';
+      --font-medium: 'Inter-Medium';
+      --font-semibold: 'Inter-SemiBold';
+      --font-bold: 'Inter-Bold';
+      
+      --radius: 0.5rem;
+
+      --accent: oklch(0.42 0.05 200.45);
+      --accent-foreground: oklch(100% 0 0);
+    }
+
+    @variant dark {
+      --font-normal: 'Inter-Regular';
+      --font-medium: 'Inter-Medium';
+      --font-semibold: 'Inter-SemiBold';
+      --font-bold: 'Inter-Bold';
+
+      --radius: 0.5rem;
+
+      --accent: oklch(0.65 0.10 200.45);
+      --accent-foreground: oklch(100% 0 0);
+    }
+  }
+}
